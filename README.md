@@ -13,7 +13,7 @@ available in the long run.
 ### React Default Template
 The current `default` template is a React project and it
 contains the following structure:
-```
+
 - `components`: components directory
 - `config`: app configuration directory
 - `core`: app mpunting, routing and flux store directory
@@ -27,7 +27,6 @@ states of an application
 - `validators`: custom validator function for `react-redux-form`
 - `index.js`: files are being used to export sub-modules for
 easier/simplier/nicer imports.
-```
 
 ## How to use it
 
