@@ -35,6 +35,6 @@ easier/simplier/nicer imports.
 # mhy boot <template-name>
 # Example:
 mhy boot default
-# or it could be
+# or:
 # mhy boot
 ```
