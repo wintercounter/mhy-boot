@@ -6,7 +6,7 @@ With `@mhy/boot` you'll be able to start codebases in the
 current `src` directory.
 
 # Templates
-Currently we have a simple `default` template available,
+Currently @mhy/boot has a simple `default` template available,
 but we're looking forward on having more templates
 available in the long run.
 
