@@ -32,9 +32,11 @@ easier/simplier/nicer imports.
 ## How to use it
 
 ```bash
-# mhy boot <template-name>
+# mhy boot [technology:react|vue|...] [template:default|...]
 # Example:
-mhy boot default
+mhy boot react default
 # or:
 # mhy boot
+# or:
+# mhy boot react
 ```
