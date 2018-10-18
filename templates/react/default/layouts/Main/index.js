@@ -1,11 +1,15 @@
 import React from 'react'
 import { node } from 'prop-types'
 
+import { Header } from '@components'
 import { main, content } from './styles.scss'
 
 const Index = ({ children }) => (
     <main className={main}>
+        <Header />
         <section className={content}>{children}</section>
+        <Header />
+        {/* FOOTER */}
     </main>
 )
 

@@ -5,7 +5,7 @@ import { ConnectedRouter } from 'react-router-redux'
 import { hot } from 'react-hot-loader'
 
 import { Main } from '@layouts'
-import { Home, Blog } from '@pages'
+import { Characters, Episodes } from '@pages'
 
 const WithLayout = ({ layout: Layout, component: Component, ...rest }) => (
     <Route
@@ -23,12 +23,17 @@ const WithHotLayout = hot(module)(WithLayout)
 const Router = ({ history }) => (
     <ConnectedRouter history={history}>
         <Switch>
-            <WithHotLayout layout={Main} path="/" exact component={Home} />
             <WithHotLayout
                 layout={Main}
-                path="/blog/:slug?/:time?/:author?"
+                path="/"
                 exact
-                component={Blog}
+                component={Characters}
+            />
+            <WithHotLayout
+                layout={Main}
+                path="/episodes"
+                exact
+                component={Episodes}
             />
         </Switch>
     </ConnectedRouter>

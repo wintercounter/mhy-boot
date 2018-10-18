@@ -1,1 +1,2 @@
-export Home from './Home'
+export Characters from './Characters'
+export Episodes from './Episodes'
