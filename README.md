@@ -33,11 +33,25 @@ easier/simplier/nicer imports.
 ## How to use it
 
 ```bash
-# mhy boot [technology:react|vue|...] [template:default|...]
+# mhy boot [technology:react|vue|...] [template:default|...] [-o,--output: output path]
+```
+
+### mhy-boot Options
+- `technology`: what technology should boot `@mhy/boot` boot.
+    * `default`: react
+- `tempalte`: what template should be loaded.
+    * `default`: default
+- `-o, --output`: path where the template should be booted.
+    * `default`: src
+
+
+```bash
 # Example:
-mhy boot react default
+mhy boot react default -o src
 # or:
 # mhy boot
 # or:
 # mhy boot react
+# or:
+# mhy boot -o xproject/path/src
 ```
