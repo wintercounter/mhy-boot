@@ -1,4 +1,4 @@
-# Warning
+### Warning
 > Tool in BETA version. Use the tool at your own risk.
 
 # @mhy/boot
@@ -6,14 +6,14 @@ With `@mhy/boot` you'll be able to start codebases in the
 current `src` directory.
 
 # Templates
-Currently we have a simple `react` template available,
+Currently @mhy/boot has a simple `default` template available,
 but we're looking forward on having more templates
 available in the long run.
 
 ### React Default Template
-The current `react` template available contains the following
-structure:
-```
+The current `default` template is a React project and it
+contains the following structure:
+
 - `components`: components directory
 - `config`: app configuration directory
 - `core`: app mpunting, routing and flux store directory
@@ -27,12 +27,15 @@ states of an application
 - `validators`: custom validator function for `react-redux-form`
 - `index.js`: files are being used to export sub-modules for
 easier/simplier/nicer imports.
-```
 
 ## How to use it
 
 ```bash
-# mhy boot <template-name>
+# mhy boot [technology:react|vue|...] [template:default|...]
 # Example:
-mhy boot react
+mhy boot react default
+# or:
+# mhy boot
+# or:
+# mhy boot react
 ```
