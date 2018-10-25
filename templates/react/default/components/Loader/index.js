@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { memo } from 'react'
 import { bool } from 'prop-types'
 import styled from 'styled-components'
 
@@ -11,11 +11,11 @@ const Figure = styled.figure`
     opacity: ${({ visible }) => Number(visible)};
 `
 
-const Loader = ({ visible }) => (
+const Loader = memo(({ visible }) => (
     <Figure visible={visible}>
         <Pacman />
     </Figure>
-)
+))
 
 Loader.propTypes = {
     visible: bool

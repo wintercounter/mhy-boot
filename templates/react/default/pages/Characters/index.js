@@ -44,7 +44,7 @@ export class Characters extends PureComponent {
         }).isRequired
     }
 
-    componentWillMount() {
+    componentDidMount() {
         const {
             characters: {
                 allIds: { length }

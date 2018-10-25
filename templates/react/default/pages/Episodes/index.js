@@ -41,7 +41,7 @@ export class Episodes extends PureComponent {
         }).isRequired
     }
 
-    componentWillMount() {
+    componentDidMount() {
         this.fetch()
     }
 
