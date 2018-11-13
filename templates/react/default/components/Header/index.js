@@ -5,11 +5,11 @@ import { header, active } from './styles.scss'
 
 const ACTIVE_CLASSNAME = active
 
-const renderNavLink = memo((to, text) => (
+const renderNavLink = (to, text) => (
     <NavLink to={to} activeClassName={ACTIVE_CLASSNAME} exact>
         {text}
     </NavLink>
-))
+)
 
 const Header = memo(() => (
     <header className={header}>
